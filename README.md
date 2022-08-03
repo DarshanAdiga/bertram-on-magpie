@@ -23,7 +23,7 @@ Both `Option-1` and `Option-2` are to be experimented with in this repository.
 
 ## Setup
 * The BERTRAM model used directly from the original author's work. The submodule `bertram` contains the code for the same.  
-* The BERTRAM model available from the original authors has been trained on `bert-base-uncased` model, and is available [here for download](https://github.com/drsphelps/bertram/tree/b05c196920bbde8905f4d39ac34009c4bc34b808#-pre-trained-models). Hence the same will be used the Sequence Classification task on MAGPIE dataset.
+* The BERTRAM model available from the original authors has been trained on `bert-base-uncased` model, and is available [here for download](https://github.com/DarshanAdiga/bertram#-pre-trained-models). Hence the same will be used the Sequence Classification task on MAGPIE dataset.
 
 ## Experiments
 
