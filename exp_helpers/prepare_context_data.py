@@ -10,11 +10,15 @@ def _get_output_file_for_idiom(idiom_token, output_dir):
     return f'{output_dir}/{idiom_token}.txt'
 
 def prepare_data_for_bertram(input_dir, output_dir):
+    if not os.path.exists(input_dir):
+        raise ValueError(f'Input directory {input_dir} does not exist')
+
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
 
     idiom_file_dict = defaultdict(list)
     for text_file in glob.glob(f'{input_dir}/*.txt'):
+        print(f"Processing {text_file}")
         with open(text_file, 'r') as f:
             lines = f.readlines()
             for line in lines:
