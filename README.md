@@ -1,11 +1,21 @@
 # BERTRAM on MAGPIE dataset
-Use BERTRAM to get single-token embeddings for idioms on the MAGPIE dataset.
+Use BERTRAM [2] to get single-token embeddings for idioms on the MAGPIE [3] dataset.
+High level objectives:
+1. Get single-token embeddings for idioms in the MAGPIE dataset using pretrained BERTRAM model
+    - Use sentences from `CC News Corpus` as contexts to obtain the BERTRAM embeddings. This data is already prepared [here](https://github.com/DarshanAdiga/idiom-principle-on-magpie-corpus#variations-of-exp3) for a different task(training a BERT model with single-token representations).
+    - Insert the new tokens of the form `<BERTRAM:IDsomeidiomtokenID>` into `bert-base-uncased` model with these embeddings.
+2. Use these embeddings to train a Sequence Classifier task on MAGPIE dataset to clasify idiom/literal meanings.
 
 ## Dataset used
 Original dataset is available: [MAGPIE_filtered_split_{*}.jsonl](https://github.com/hslh/magpie-corpus).
 
+## Single Token Representation
+The setup is similar as described [here](https://github.com/DarshanAdiga/idiom-principle-on-magpie-corpus#single-token-representation).  
+Both `Option-1` and `Option-2` are to be experimented with in this repository.  
+
 ## Setup
-* The BERTRAM model used directly from the original author's work. The submodule [bertram](./bertram) contains the code for the same.
+* The BERTRAM model used directly from the original author's work. The submodule `bertram` contains the code for the same.  
+* The original BERTRAM model has been trained on `bert-base-uncased` model, hence the same will be used the Sequence Classification task on MAGPIE dataset.
 
 ## Experiments
 
