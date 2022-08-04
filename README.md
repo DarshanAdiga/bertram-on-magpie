@@ -7,8 +7,6 @@ High level objectives:
 2. Use these embeddings to train a **Sequence Classifier task on MAGPIE dataset** to clasify idiom/literal meanings. Code for this downstream task is already available in [idiom-principle-on-magpie-corpus](https://github.com/DarshanAdiga/idiom-principle-on-magpie-corpus) repository. 
 
 ## Dataset used
-Original dataset is available: [MAGPIE_filtered_split_{*}.jsonl](https://github.com/hslh/magpie-corpus).
-
 ### CC News Corpus with MAAGPIE idioms
 This data is already prepared [here](https://github.com/DarshanAdiga/idiom-principle-on-magpie-corpus#variations-of-exp3) for a different task(training a BERT model with single-token representations).  
 Below files are taken from above repository:
@@ -17,21 +15,25 @@ Below files are taken from above repository:
 | ---- | ---------- |
 |[all_replace_data.txt](./data/cc_processed/exp3B_1/)| [exp3B_1](https://github.com/DarshanAdiga/idiom-principle-on-magpie-corpus/experiments/exp3B_1/pretrain_data/)|
 
-## Single Token Representation
-The setup is similar as described [here](https://github.com/DarshanAdiga/idiom-principle-on-magpie-corpus#single-token-representation).  
-Both `Option-1` and `Option-2` are to be experimented with in this repository.  
+### MAGPIE dataset
+The dataset [MAGPIE_filtered_split_{*}.jsonl](https://github.com/hslh/magpie-corpus) is used for Idiom Detection using SequenceClassification task.
 
 ## Setup
 * The BERTRAM model used directly from the original author's work. The submodule `bertram` contains the code for the same.  
 * The BERTRAM model available from the original authors has been trained on `bert-base-uncased` model, and is available [here for download](https://github.com/DarshanAdiga/bertram#-pre-trained-models). Hence the same will be used the Sequence Classification task on MAGPIE dataset.
+* **Very IMP**: The orignal BERTRAM implementation (`./bertram`) uses the old version of `transformers` library. Hence, a dedicated virtual environment is recommended for these experiments.
+
+## Single Token Representation
+The setup is similar as described [here](https://github.com/DarshanAdiga/idiom-principle-on-magpie-corpus#single-token-representation).  
+Both `Option-1` and `Option-2` are to be experimented with in this repository.  
 
 ## Experiments
 
-| Experiment | Code  | Dataset | Single Token Type | Base Model | No of Examples | Status | Updated model |
-|:-----------|:------|:--------|:------------------|:-----------|:---------------|:-------|:--------------|
-| bt_0       | [bt_0](./experiments/bt_0/) | [all_replace_data.txt](./data/cc_processed/exp3B_1/) | `Option-1` |bert-base-uncased | 20 | TODO | [bert-base-uncased_option1_with_bertram](./local_models/bert-base-uncased_option1_with_bertram) |
-| bt_1       | [bt_1](./experiments/bt_1/) | [all_replace_data.txt](./data/cc_processed/exp3B_1/) | `Option-1` |bert-base-uncased | 50 | TODO | TODO |
-| bt_2       | [bt_2](./experiments/bt_2/) | [all_replace_data.txt](./data/cc_processed/exp3B_1/) | `Option-1` |bert-base-uncased | 200 | TODO | TODO |
+| Experiment | Code  | Dataset | Single Token Type | Base Model | No of Examples | BERTRAM Status | Idiom Detection Status | Updated model |
+|:-----------|:------|:--------|:------------------|:-----------|:---------------|:---------------|:-------------------|:---------------|
+| bt_0       | [bt_0](./experiments/bt_0/) | [all_replace_data.txt](./data/cc_processed/exp3B_1/) | `Option-1` |bert-base-uncased | 20 | DONE | TODO | [bert-base-uncased_option1_with_bertram](./local_models/bert-base-uncased_option1_with_bertram) |
+| bt_1       | [bt_1](./experiments/bt_1/) | [all_replace_data.txt](./data/cc_processed/exp3B_1/) | `Option-1` |bert-base-uncased | 50 | TODO | TODO | TODO |
+| bt_2       | [bt_2](./experiments/bt_2/) | [all_replace_data.txt](./data/cc_processed/exp3B_1/) | `Option-1` |bert-base-uncased | 200 | TODO | TODO | TODO |
 
 ### Results
 The results on **Sequence Classifier task on MAGPIE dataset** task using the BERTRAM embeddings in a BERT model.
