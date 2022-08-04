@@ -5,6 +5,7 @@ import os
 from collections import defaultdict
 
 IDIOM_TOKEN_PATTERN = re.compile(r'ID[a-z]*ID')
+PUNCT_PATTERN = re.compile(r'([^a-zA-Z0-9])')
 
 def _get_output_file_for_idiom(idiom_token, output_dir):
     return f'{output_dir}/{idiom_token}.txt'
@@ -22,10 +23,18 @@ def prepare_data_for_bertram(input_dir, output_dir):
         with open(text_file, 'r') as f:
             lines = f.readlines()
             for line in lines:
-                for match in IDIOM_TOKEN_PATTERN.finditer(line):
-                    found_idi_token = match.group()
+                # insert space before & after punctuation
+                line = PUNCT_PATTERN.sub(r" \1 ", line)
+                all_matches = [match.group() for match in IDIOM_TOKEN_PATTERN.finditer(line)]
+                # If, there is only one idiom per line
+                if len(all_matches) == 1:
+                    found_idi_token = all_matches[0]
                     context_list = idiom_file_dict[found_idi_token]
                     context_list.append(line.strip())
+                else:
+                    # NOTE:: Ignore this example sentence!! It could be wrong/ambiguous.
+                    continue
+
     # Write contexts to separate files
     for idiom_token, context_list in idiom_file_dict.items():
         output_file = _get_output_file_for_idiom(idiom_token, output_dir)
