@@ -75,9 +75,9 @@ weight_decay=0.0,
 08/13/2022 20:39:09 - INFO - run_glue_f1_macro -   load a local file for test: ./tmp/test.csv
 08/13/2022 20:39:09 - WARNING - datasets.builder -   Using custom data configuration default-1e5221f64b8273cd
 08/13/2022 20:39:09 - WARNING - datasets.builder -   Reusing dataset csv (/home/acp20dah/.cache/huggingface/datasets/csv/default-1e5221f64b8273cd/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0)
-[INFO|configuration_utils.py:515] 2022-08-13 20:39:09,679 >> loading configuration file ../../local_models/bert-base-uncased_option1_with_bertram_SC/config.json
+[INFO|configuration_utils.py:515] 2022-08-13 20:39:09,679 >> loading configuration file ../../local_models/bert-base-uncased_option1_with_bertram_bt0_SC/config.json
 [INFO|configuration_utils.py:553] 2022-08-13 20:39:09,680 >> Model config BertConfig {
-  "_name_or_path": "../../local_models/bert-base-uncased_option1_with_bertram",
+  "_name_or_path": "../../local_models/bert-base-uncased_option1_with_bertram_bt0",
   "architectures": [
     "BertForSequenceClassification"
   ],
@@ -101,9 +101,9 @@ weight_decay=0.0,
   "vocab_size": 31691
 }
 
-[INFO|configuration_utils.py:515] 2022-08-13 20:39:09,681 >> loading configuration file ../../local_models/bert-base-uncased_option1_with_bertram_SC/config.json
+[INFO|configuration_utils.py:515] 2022-08-13 20:39:09,681 >> loading configuration file ../../local_models/bert-base-uncased_option1_with_bertram_bt0_SC/config.json
 [INFO|configuration_utils.py:553] 2022-08-13 20:39:09,682 >> Model config BertConfig {
-  "_name_or_path": "../../local_models/bert-base-uncased_option1_with_bertram",
+  "_name_or_path": "../../local_models/bert-base-uncased_option1_with_bertram_bt0",
   "architectures": [
     "BertForSequenceClassification"
   ],
@@ -127,12 +127,12 @@ weight_decay=0.0,
   "vocab_size": 31691
 }
 
-[INFO|tokenization_utils_base.py:1651] 2022-08-13 20:39:09,682 >> Didn't find file ../../local_models/bert-base-uncased_option1_with_bertram_SC/tokenizer.json. We won't load it.
-[INFO|tokenization_utils_base.py:1715] 2022-08-13 20:39:09,683 >> loading file ../../local_models/bert-base-uncased_option1_with_bertram_SC/vocab.txt
+[INFO|tokenization_utils_base.py:1651] 2022-08-13 20:39:09,682 >> Didn't find file ../../local_models/bert-base-uncased_option1_with_bertram_bt0_SC/tokenizer.json. We won't load it.
+[INFO|tokenization_utils_base.py:1715] 2022-08-13 20:39:09,683 >> loading file ../../local_models/bert-base-uncased_option1_with_bertram_bt0_SC/vocab.txt
 [INFO|tokenization_utils_base.py:1715] 2022-08-13 20:39:09,683 >> loading file None
-[INFO|tokenization_utils_base.py:1715] 2022-08-13 20:39:09,683 >> loading file ../../local_models/bert-base-uncased_option1_with_bertram_SC/added_tokens.json
-[INFO|tokenization_utils_base.py:1715] 2022-08-13 20:39:09,683 >> loading file ../../local_models/bert-base-uncased_option1_with_bertram_SC/special_tokens_map.json
-[INFO|tokenization_utils_base.py:1715] 2022-08-13 20:39:09,684 >> loading file ../../local_models/bert-base-uncased_option1_with_bertram_SC/tokenizer_config.json
+[INFO|tokenization_utils_base.py:1715] 2022-08-13 20:39:09,683 >> loading file ../../local_models/bert-base-uncased_option1_with_bertram_bt0_SC/added_tokens.json
+[INFO|tokenization_utils_base.py:1715] 2022-08-13 20:39:09,683 >> loading file ../../local_models/bert-base-uncased_option1_with_bertram_bt0_SC/special_tokens_map.json
+[INFO|tokenization_utils_base.py:1715] 2022-08-13 20:39:09,684 >> loading file ../../local_models/bert-base-uncased_option1_with_bertram_bt0_SC/tokenizer_config.json
 [INFO|tokenization_utils.py:207] 2022-08-13 20:39:09,811 >> Adding <BERTRAM:IDaboveboardID> to the vocabulary
 [INFO|tokenization_utils.py:207] 2022-08-13 20:39:09,811 >> Adding <BERTRAM:IDaboveparID> to the vocabulary
 [INFO|tokenization_utils.py:207] 2022-08-13 20:39:09,812 >> Adding <BERTRAM:IDacrosstheboardID> to the vocabulary
@@ -1302,10 +1302,10 @@ weight_decay=0.0,
 [INFO|tokenization_utils.py:207] 2022-08-13 20:39:09,868 >> Adding <BERTRAM:IDyesandnoID> to the vocabulary
 [INFO|tokenization_utils.py:207] 2022-08-13 20:39:09,868 >> Adding <BERTRAM:IDyoungbloodID> to the vocabulary
 [INFO|tokenization_utils.py:207] 2022-08-13 20:39:09,868 >> Adding <BERTRAM:IDyourguessisasgoodasmineID> to the vocabulary
-[INFO|modeling_utils.py:1150] 2022-08-13 20:39:17,582 >> loading weights file ../../local_models/bert-base-uncased_option1_with_bertram_SC/pytorch_model.bin
+[INFO|modeling_utils.py:1150] 2022-08-13 20:39:17,582 >> loading weights file ../../local_models/bert-base-uncased_option1_with_bertram_bt0_SC/pytorch_model.bin
 [INFO|modeling_utils.py:1336] 2022-08-13 20:39:22,365 >> All model checkpoint weights were used when initializing BertForSequenceClassification.
 
-[INFO|modeling_utils.py:1344] 2022-08-13 20:39:22,365 >> All the weights of BertForSequenceClassification were initialized from the model checkpoint at ../../local_models/bert-base-uncased_option1_with_bertram_SC.
+[INFO|modeling_utils.py:1344] 2022-08-13 20:39:22,365 >> All the weights of BertForSequenceClassification were initialized from the model checkpoint at ../../local_models/bert-base-uncased_option1_with_bertram_bt0_SC.
 If your task is similar to the task the model of the checkpoint was trained on, you can already use BertForSequenceClassification for predictions without further training.
 08/13/2022 20:39:22 - WARNING - datasets.fingerprint -   Parameter 'function'=<function main.<locals>.preprocess_function at 0x2b728993ddc0> of the transform datasets.arrow_dataset.Dataset._map_single couldn't be hashed properly, a random hash was used instead. Make sure your transforms and parameters are serializable with pickle or dill for the dataset fingerprinting and caching to work. If you reuse this transform, the caching mechanism will consider it to be different from the previous calls and recompute everything. This warning is only showed once. Subsequent hashing failures won't be showed.
 
@@ -1369,9 +1369,9 @@ If your task is similar to the task the model of the checkpoint was trained on, 
 08/13/2022 20:40:30 - INFO - run_glue_f1_macro -   Sample 3719 of the training set: {'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'input_ids': [101, 3419, 2038, 31052, 1998, 2010, 6911, 3798, 2031, 10548, 6022, 1012, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'label': 1, 'sentence_0': 'Tom has <BERTRAM:IDjointheclubID> and his stress levels have decreased significantly .', 'token_type_ids': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}.
 08/13/2022 20:40:30 - INFO - run_glue_f1_macro -   Sample 8380 of the training set: {'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'input_ids': [101, 1037, 2117, 2030, 2061, 2077, 2431, 2051, 9999, 2323, 2031, 2042, 30739, 2004, 6838, 3557, 2718, 1996, 2695, 1012, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'label': 0, 'sentence_0': 'A second or so before half time Bradford should have been <BERTRAM:IDdeadandburiedID> as Tommy Jones hit the post .', 'token_type_ids': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}.
 
-[INFO|configuration_utils.py:515] 2022-08-13 20:40:31,611 >> loading configuration file ../../local_models/bert-base-uncased_option1_with_bertram_SC/config.json
+[INFO|configuration_utils.py:515] 2022-08-13 20:40:31,611 >> loading configuration file ../../local_models/bert-base-uncased_option1_with_bertram_bt0_SC/config.json
 [INFO|configuration_utils.py:553] 2022-08-13 20:40:31,611 >> Model config BertConfig {
-  "_name_or_path": "../../local_models/bert-base-uncased_option1_with_bertram",
+  "_name_or_path": "../../local_models/bert-base-uncased_option1_with_bertram_bt0",
   "architectures": [
     "BertForSequenceClassification"
   ],
@@ -1395,7 +1395,7 @@ If your task is similar to the task the model of the checkpoint was trained on, 
   "vocab_size": 31691
 }
 
-[INFO|trainer.py:1047] 2022-08-13 20:40:31,612 >> Loading model from ../../local_models/bert-base-uncased_option1_with_bertram_SC).
+[INFO|trainer.py:1047] 2022-08-13 20:40:31,612 >> Loading model from ../../local_models/bert-base-uncased_option1_with_bertram_bt0_SC).
 [INFO|trainer.py:514] 2022-08-13 20:40:31,912 >> The following columns in the training set  don't have a corresponding argument in `BertForSequenceClassification.forward` and have been ignored: sentence_0.
 [INFO|trainer.py:1147] 2022-08-13 20:40:31,944 >> ***** Running training *****
 [INFO|trainer.py:1148] 2022-08-13 20:40:31,944 >>   Num examples = 38715

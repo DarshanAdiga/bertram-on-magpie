@@ -30,11 +30,11 @@ Both `Option-1` and `Option-2` are to be experimented with in this repository.
 
 ## Experiments
 **Steps Followed**:
-1. Get the preprocessed CC News corpus containing the **idiom single-tokens**. Prepare the context data from this.  
-2. Use this context data to obtain BERTRAM embddings, insert the BERTRAM tokens into another BERT model and save it. **Note**, the model produced with added bertram tokens will have a wrong vocab size in its config. This needs to be corrected.  
-3. The model saved by step 2 needs to be converted to a SequenceClassification model before proceeding to the next step.  
-4. Get the MAGPIE dataset containing **idiom single-tokens** for sequence classification. **IMP:** Rename the single tokens (`<ID...ID>`) as BERTRAM tokens (`<BERTRAM:ID...ID>`) in train, dev & test datasets.  
-5. Train a Sequence Classification task on MAGPIE dataset & record the results.  
+1. Get the preprocessed CC News corpus containing the **idiom single-tokens**. Prepare the context data from this (Mostly, you only need to prepare this once). Use the script `prepare_data.sh` to do this.  
+2. Use this context data to obtain BERTRAM embddings, insert the BERTRAM tokens into another BERT model and save it. Use the script `train_and_update_bertram_embeddings_hpc.sh` to do this. **Note**, the model produced with added bertram tokens will have a wrong vocab size in its config. This needs to be corrected.  
+3. The model saved by step 2 needs to be converted to a SequenceClassification model before proceeding to the next step. Use the notebook `exp_helpers/MLM_to_SeqClass_model_converter.ipynb` to do this.  
+4. Get the MAGPIE dataset containing **idiom single-tokens** for sequence classification. **IMP:** Rename the single tokens (`<ID...ID>`) as BERTRAM tokens (`<BERTRAM:ID...ID>`) in train, dev & test datasets. Use the script `replace_with_bertram_tokens.sh` to do this. (Mostly, you only need to prepare this once).  
+5. Train a Sequence Classification task on MAGPIE dataset & record the results. Use `hpc.sh` to do this.  
 
 
 | Experiment | Code  | Context Dataset | Single Token Type | Source MAGPIE Dataset | Base Model | No of Examples | BERTRAM Status | Idiom Detection Status | Updated model |
