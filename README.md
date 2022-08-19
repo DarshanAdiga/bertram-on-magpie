@@ -39,9 +39,9 @@ Both `Option-1` and `Option-2` are to be experimented with in this repository.
 
 | Experiment | Code  | Context Dataset | Single Token Type | Source MAGPIE Dataset | Base Model | No of Examples | BERTRAM Status | Idiom Detection Status | Updated model |
 |:-----------|:------|:----------------|:------------------|:---------------|:-----------|:---------------|:---------------|:----------------------|:--------------|
-| bt0       | [bt0](./experiments/bt0/) | [all_replace_data.txt](./data/cc_processed/exp3B_1/) | `Option-1` | [exp3B_1/tmp/](https://github.com/DarshanAdiga/idiom-principle-on-magpie-corpus/tree/3B_retraining/experiments/exp3B_1) | bert-base-uncased | 20 | DONE | Done (4 GPUs) | [bert-base-uncased_option1_with_bertram_SC](./local_models/bert-base-uncased_option1_with_bertram_SC) |
-| bt1       | [bt1](./experiments/bt1/) | [all_replace_data.txt](./data/cc_processed/exp3B_1/) | `Option-1` | [exp3B_1/tmp/](https://github.com/DarshanAdiga/idiom-principle-on-magpie-corpus/tree/3B_retraining/experiments/exp3B_1) | bert-base-uncased | 50 | TODO | TODO | TODO |
-| bt2       | [bt2](./experiments/bt2/) | [all_replace_data.txt](./data/cc_processed/exp3B_1/) | `Option-1` | [exp3B_1/tmp/](https://github.com/DarshanAdiga/idiom-principle-on-magpie-corpus/tree/3B_retraining/experiments/exp3B_1) | bert-base-uncased | 200 | TODO | TODO | TODO |
+| bt0       | [bt0](./experiments/bt0/) | [all_replace_data.txt](./data/cc_processed/exp3B_1/) | `Option-1` | [exp3B_1/tmp/](https://github.com/DarshanAdiga/idiom-principle-on-magpie-corpus/tree/3B_retraining/experiments/exp3B_1) | bert-base-uncased | 20 | DONE (Took 00:01:39) | Done (4 GPUs) | [bert-base-uncased_option1_with_bertram_bt0_SC](./local_models/bert-base-uncased_option1_with_bertram_bt0_SC) |
+| bt1       | [bt1](./experiments/bt1/) | *same as bt0* | `Option-1` | *same as bt0* | bert-base-uncased | 50 | DONE (Took 00:07:38) | OnGoing | [bert-base-uncased_option1_with_bertram_bt1_SC](./local_models/bert-base-uncased_option1_with_bertram_bt1_SC) |
+| bt2       | [bt2](./experiments/bt2/) | *same as bt0* | `Option-1` | *same as bt0* | bert-base-uncased | 200 | DONE (Took 00:18:23) | OnGoing | [bert-base-uncased_option1_with_bertram_bt2_SC](./local_models/bert-base-uncased_option1_with_bertram_bt2_SC) |
 
 ### Results
 The results on **Sequence Classifier task on MAGPIE dataset** task using the BERTRAM embeddings in a BERT model.

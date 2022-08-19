@@ -24,6 +24,9 @@ export OUTPUT_DIR=$BASE_DIR/"local_models/bert-base-uncased_option1_with_bertram
 export EXAMPLES_FOLDER="./context_data"
 export NO_EXAMPLES=50
 
+mkdir -p $OUTPUT_DIR
+echo "Created output directory: $OUTPUT_DIR"
+
 python3 $BASE_DIR/bertram/train_embeddings.py \
    --bertram_model $BERTRAM_MODEL \
    --bert_model $BERT_MODEL \

@@ -20,9 +20,9 @@ source activate /data/acp20dah/dissertation/venv_old_trans
 export BASE_DIR="../.."
 export BERTRAM_MODEL=$BASE_DIR/"local_models/bertram-add-for-bert-base-uncased"
 export BERT_MODEL="bert-base-uncased"
-export OUTPUT_DIR=$BASE_DIR/"local_models/bert-base-uncased_option1_with_bertram_bt0"
+export OUTPUT_DIR=$BASE_DIR/"local_models/bert-base-uncased_option1_with_bertram_bt2"
 export EXAMPLES_FOLDER="./context_data"
-export NO_EXAMPLES=20
+export NO_EXAMPLES=200
 
 mkdir -p $OUTPUT_DIR
 echo "Created output directory: $OUTPUT_DIR"
