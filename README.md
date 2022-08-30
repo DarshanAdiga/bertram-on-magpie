@@ -47,9 +47,18 @@ Both `Option-1` and `Option-2` are to be experimented with in this repository.
 The results on **Sequence Classifier task on MAGPIE dataset** task using the BERTRAM embeddings in a BERT model.
 | Experiment | Dev Accuracy | Dev F1 | Test Accuracy | Test F1 |
 |:-----------|:-------------|:-------|:--------------|:--------|
-| bt_0       | 85.47 | 80.59 | 0.0 | 0.0 |
-| bt_1       | 86.67 | 82.06 | 0.0 | 0.0 |
-| bt_2       | 84.73 | 80.59 | 0.0 | 0.0 |
+| bt_0       | 85.47 | 80.59 | 83.86 | 80.47 |
+| bt_1       | 86.67 | 82.06 | 83.8 | 79.6 |
+| bt_2       | 84.73 | 80.59 | 84.73 | 80.59 |
+
+## Error Analysis & Study
+NOTE: Refer to [Error Analysis & Study](https://github.com/DarshanAdiga/idiom-principle-on-magpie-corpus#error-analysis-study). All the implementations are copied from there.
+
+The precomputed grouping of PIEs has been copied from `idiom-principle-on-magpie-corpus` repository and is available at [data/PIE_segregation](./data/PIE_segregation/).
+
+The classification reports has been copied from `idiom-principle-on-magpie-corpus` repository and is available at [exp_helpers/produce_test_results.py](./exp_helpers/produce_test_results.py).
+
+The classification reports (both overall and segreated) is generated for the best experiment `bt_2` (folder named `bt2`).
 
 ## References
 
