@@ -5,3 +5,5 @@
 local_models/*
 */*/checkpoints_*
 data/cc_processed/exp3B_1
+
+*/*/embedding_dump/
