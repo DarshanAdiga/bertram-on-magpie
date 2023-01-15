@@ -22,7 +22,7 @@ The dataset [MAGPIE_filtered_split_{*}.jsonl](https://github.com/hslh/magpie-cor
 ## Setup
 * The BERTRAM model used directly from the original author's work. The submodule `bertram` contains the code for the same.  
 * The BERTRAM model available from the original authors has been trained on `bert-base-uncased` model, and is available [here for download](https://github.com/DarshanAdiga/bertram#-pre-trained-models). Hence the same will be used the Sequence Classification task on MAGPIE dataset.
-* **Very IMP**: The orignal BERTRAM implementation (`./bertram`) uses the old version of `transformers` library. Hence, a dedicated virtual environment is recommended for these experiments.
+* **Very IMP**: The orignal BERTRAM implementation (`./bertram`) uses the old version of `transformers` library. Hence, a dedicated virtual environment is recommended for these experiments. The older version of `transformers` library is necessary only when dealing with the BERTRAM model. The downstream task on MAGPIE dataset can be done using the latest version of `transformers` library.
 
 ## Single Token Representation
 The setup is similar as described [here](https://github.com/DarshanAdiga/idiom-principle-on-magpie-corpus#single-token-representation).  
@@ -59,6 +59,9 @@ The precomputed grouping of PIEs has been copied from `idiom-principle-on-magpie
 The classification reports has been copied from `idiom-principle-on-magpie-corpus` repository and is available at [exp_helpers/produce_test_results.py](./exp_helpers/produce_test_results.py).
 
 The classification reports (both overall and segreated) is generated for the best experiment `bt_2` (folder named `bt2`).
+
+## Statistical Significance Test
+NOTE: Refer to [Statistical Significance Test Report](https://github.com/DarshanAdiga/idiom-principle-on-magpie-corpus/tree/stat_sig#statistical-significance-test)
 
 ## References
 
